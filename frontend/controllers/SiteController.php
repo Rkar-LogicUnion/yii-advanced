@@ -75,6 +75,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         Yii::$app->params['var1']='This is testing';
+        $_SESSION['var2']='This is session data';
         return $this->render('index');
     }
 
