@@ -26,16 +26,15 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
     <?=$this->render('header')?>
-    <div class="container">
+    <div id="main">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
-</div>
+
 
 <?=$this->render('footer')?>
 
