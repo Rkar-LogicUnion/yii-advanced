@@ -74,6 +74,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        Yii::$app->params['var1']='This is testing';
         return $this->render('index');
     }
 
